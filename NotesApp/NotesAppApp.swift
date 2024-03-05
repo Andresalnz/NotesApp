@@ -25,7 +25,7 @@ struct NotesAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeNotesView(viewModel: HomeViewModel(notes: [.init(title: "Andres", text: "Yo mismo", createdAt: .now)]) )
         }
         .modelContainer(sharedModelContainer)
     }
